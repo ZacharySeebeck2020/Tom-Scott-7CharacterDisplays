@@ -48,7 +48,7 @@
             // longestAccepableWord
             // 
             this.longestAccepableWord.AutoSize = true;
-            this.longestAccepableWord.Location = new System.Drawing.Point(150, 37);
+            this.longestAccepableWord.Location = new System.Drawing.Point(150, 28);
             this.longestAccepableWord.Name = "longestAccepableWord";
             this.longestAccepableWord.Size = new System.Drawing.Size(0, 13);
             this.longestAccepableWord.TabIndex = 1;
@@ -56,7 +56,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 37);
+            this.label3.Location = new System.Drawing.Point(12, 28);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(132, 13);
             this.label3.TabIndex = 2;
@@ -73,7 +73,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(34, 71);
+            this.label2.Location = new System.Drawing.Point(38, 48);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(106, 13);
             this.label2.TabIndex = 4;
@@ -82,7 +82,7 @@
             // longestWordLength
             // 
             this.longestWordLength.AutoSize = true;
-            this.longestWordLength.Location = new System.Drawing.Point(150, 71);
+            this.longestWordLength.Location = new System.Drawing.Point(144, 48);
             this.longestWordLength.Name = "longestWordLength";
             this.longestWordLength.Size = new System.Drawing.Size(0, 13);
             this.longestWordLength.TabIndex = 5;
@@ -91,7 +91,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(424, 157);
+            this.ClientSize = new System.Drawing.Size(300, 70);
             this.Controls.Add(this.longestWordLength);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.totalWordCount);

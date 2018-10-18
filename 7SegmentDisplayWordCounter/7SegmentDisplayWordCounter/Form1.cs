@@ -23,13 +23,14 @@ namespace _7SegmentDisplayWordCounter
 
             try
             {
-                // Open the Dictionary file.
                 StreamReader sr;
                 sr = File.OpenText("words.txt");
                 string strWords = "";
                 string[] words = new string[500000];
-
+                char[] BADCHARS = new char[] { 'g', 'k', 'm', 'q', 'v', 'w', 'x', 'z', 'i', 'o' }; // Added I and O to finish up with the end of Tom Scott's video. If you want it to be 'origonal' then you can go ahead and remove them.
                 bool isFailed = false;
+                string strLongestAcceptableWord = "";
+
 
                 while (!sr.EndOfStream)
                 {
@@ -43,12 +44,7 @@ namespace _7SegmentDisplayWordCounter
                     sr.Close();
                 }
 
-            // Declare unuseable letters.
-            char[] BADCHARS = new char[] { 'g', 'k', 'm', 'q', 'v', 'w', 'x', 'z'/*'i', 'o' */ }; // Added I and O to finish up with the end of Tom Scott's video.
-
-                string strLongestAcceptableWord = "";
-
-            totalWordCount.Text = words.Length.ToString();
+                totalWordCount.Text = words.Length.ToString();
 
                 for (int i = 0; i < words.Length; i++)
                 {
@@ -63,7 +59,6 @@ namespace _7SegmentDisplayWordCounter
                             {
                                 if (characters[b] == BADCHARS[v])
                                 {
-                                    // fail the word
                                     isFailed = true;
                                 }
                                 
@@ -87,7 +82,7 @@ namespace _7SegmentDisplayWordCounter
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message + ex.Data);
+                MessageBox.Show(ex.Message);
             }
             
         }
