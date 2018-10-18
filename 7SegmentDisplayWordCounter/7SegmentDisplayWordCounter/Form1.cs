@@ -43,8 +43,8 @@ namespace _7SegmentDisplayWordCounter
                     sr.Close();
                 }
 
-                // Declare unuseable letters.
-                char[] BADCHARS = new char[] { 'g', 'k', 'm', 'q', 'v', 'w', 'x', 'z' };
+            // Declare unuseable letters.
+            char[] BADCHARS = new char[] { 'g', 'k', 'm', 'q', 'v', 'w', 'x', 'z', 'i', 'o' }; // Added I and O to finish up with the end of Tom Scott's video.
 
                 string strLongestAcceptableWord = "";
 
