@@ -21,8 +21,8 @@ namespace _7SegmentDisplayWordCounter
         private void Form1_Load(object sender, EventArgs e)
         {
 
-           // try
-           // {
+            try
+            {
                 // Open the Dictionary file.
                 StreamReader sr;
                 sr = File.OpenText("words.txt");
@@ -44,10 +44,11 @@ namespace _7SegmentDisplayWordCounter
                 }
 
             // Declare unuseable letters.
-            char[] BADCHARS = new char[] { 'g', 'k', 'm', 'q', 'v', 'w', 'x', 'z', 'i', 'o' }; // Added I and O to finish up with the end of Tom Scott's video.
+            char[] BADCHARS = new char[] { 'g', 'k', 'm', 'q', 'v', 'w', 'x', 'z'/*'i', 'o' */ }; // Added I and O to finish up with the end of Tom Scott's video.
 
                 string strLongestAcceptableWord = "";
 
+            totalWordCount.Text = words.Length.ToString();
 
                 for (int i = 0; i < words.Length; i++)
                 {
@@ -77,17 +78,18 @@ namespace _7SegmentDisplayWordCounter
                         {
                             strLongestAcceptableWord = words[i];
                             longestAccepableWord.Text = strLongestAcceptableWord;
+                            longestWordLength.Text = strLongestAcceptableWord.Length.ToString();
                         }
 
                     }
                 }
-/*
+
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message + ex.Data);
             }
-            */
+            
         }
     }
 }

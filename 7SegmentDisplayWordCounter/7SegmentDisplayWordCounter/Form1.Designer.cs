@@ -32,6 +32,8 @@
             this.longestAccepableWord = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.totalWordCount = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.longestWordLength = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -46,7 +48,7 @@
             // longestAccepableWord
             // 
             this.longestAccepableWord.AutoSize = true;
-            this.longestAccepableWord.Location = new System.Drawing.Point(150, 46);
+            this.longestAccepableWord.Location = new System.Drawing.Point(150, 37);
             this.longestAccepableWord.Name = "longestAccepableWord";
             this.longestAccepableWord.Size = new System.Drawing.Size(0, 13);
             this.longestAccepableWord.TabIndex = 1;
@@ -54,7 +56,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 46);
+            this.label3.Location = new System.Drawing.Point(12, 37);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(132, 13);
             this.label3.TabIndex = 2;
@@ -68,11 +70,30 @@
             this.totalWordCount.Size = new System.Drawing.Size(0, 13);
             this.totalWordCount.TabIndex = 3;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(34, 71);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(106, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Longest word length.";
+            // 
+            // longestWordLength
+            // 
+            this.longestWordLength.AutoSize = true;
+            this.longestWordLength.Location = new System.Drawing.Point(150, 71);
+            this.longestWordLength.Name = "longestWordLength";
+            this.longestWordLength.Size = new System.Drawing.Size(0, 13);
+            this.longestWordLength.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(424, 78);
+            this.ClientSize = new System.Drawing.Size(424, 157);
+            this.Controls.Add(this.longestWordLength);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.totalWordCount);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.longestAccepableWord);
@@ -91,6 +112,8 @@
         private System.Windows.Forms.Label longestAccepableWord;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label totalWordCount;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label longestWordLength;
     }
 }
 
